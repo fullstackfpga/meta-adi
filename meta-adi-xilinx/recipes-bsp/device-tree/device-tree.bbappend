@@ -19,6 +19,7 @@ SRC_URI_append_zynq = " \
 		file://pl-delete-nodes-zynq-zc706-adv7511-fmcomms11.dtsi \
 		file://pl-delete-nodes-zynq-zc706-adv7511-fmcdaq3-revC.dtsi \
 		file://pl-delete-nodes-zynq-zc706-adv7511-fmcjesdadc1.dtsi \
+        file://pl-delete-nodes-zynq-zc706-adv7511-ad9172-fmc-ebz.dtsi \
 		file://pl-delete-nodes-zynq-zed-imageon.dtsi \
 		file://pl-delete-nodes-zynq-adrv9361-z7035-bob-cmos.dtsi \
 		file://pl-delete-nodes-zynq-adrv9361-z7035-bob.dtsi \
@@ -70,6 +71,7 @@ SRC_URI_append_microblaze = " \
 #	* zynq-zc706-adv7511-fmcdaq3-revC
 #	* zynq-zc706-adv7511-fmcjesdadc1
 #	* zynq-zc706-adv7511-fmcomms11
+#   * zynq-zc706-adv7511-ad9172-fmc-ebz
 #	* zynq-zed-imageon
 #	* zynq-zc702-adv7511-ad9361-fmcomms5
 #	* zynq-zc702-adv7511
@@ -97,7 +99,7 @@ SRC_URI_append_microblaze = " \
 #	* vc707_fmcomms2-3
 #	* vc707_fmcjesdadc1
 #	* vc707_fmcadc5
-KERNEL_DTB = "zynq-zed-adv7511-ad9361-fmcomms2-3"
+KERNEL_DTB = "zynq-zc706-adv7511-ad9172-fmc-ebz"
 
 DTB_PL_DELETE = "pl-delete-nodes-${KERNEL_DTB}"
 # used for sanity check
